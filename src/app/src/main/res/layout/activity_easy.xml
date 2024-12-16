@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EasyGame">
+
+    <!-- GIF o Imagen central -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="250dp"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="136dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"/>
+    <!-- Botones de ataque -->
+    <Button
+        android:id="@+id/attack1"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="@string/attack1"
+        android:textSize="8sp"
+        app:layout_constraintTop_toBottomOf="@id/gifImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp" />
+
+
+
+    <Button
+        android:id="@+id/attack2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:textSize="8sp"
+        android:text="@string/attack2"
+        app:layout_constraintTop_toBottomOf="@id/gifImageView"
+        app:layout_constraintStart_toEndOf="@id/attack1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/attack3"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="@string/attack3"
+        android:textSize="8sp"
+        app:layout_constraintTop_toBottomOf="@id/attack1"
+        app:layout_constraintStart_toStartOf="@id/attack1"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/attack4"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="@string/attack4"
+        android:textSize="8sp"
+        app:layout_constraintTop_toBottomOf="@id/attack2"
+        app:layout_constraintStart_toStartOf="@id/attack2"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botones de cambio (Switch) -->
+    <Button
+        android:id="@+id/switch1"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:text="@string/switch1"
+        app:layout_constraintStart_toStartOf="@id/attack3"
+        app:layout_constraintTop_toBottomOf="@id/attack3" />
+
+    <Button
+        android:id="@+id/switch2"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:text="@string/switch2"
+        app:layout_constraintStart_toStartOf="@id/attack4"
+        app:layout_constraintTop_toBottomOf="@id/attack4" />
+
+    <Button
+        android:id="@+id/switch3"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:textSize="12sp"
+        android:text="@string/switch3"
+        app:layout_constraintStart_toStartOf="@id/switch1"
+        app:layout_constraintTop_toTopOf="@id/switch1"
+        />
+
+    <Button
+        android:id="@+id/switch4"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:textSize="12sp"
+        android:text="@string/switch4"
+        app:layout_constraintStart_toStartOf="@id/switch2"
+        app:layout_constraintTop_toTopOf="@id/switch2"/>
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="760dp"
+        android:textSize="12sp"
+        android:text="@string/music"
+        app:layout_constraintStart_toStartOf="@id/textTurn"
+        app:layout_constraintTop_toTopOf="@id/textTurn"/>
+
+    <TextView
+        android:id="@+id/textTurn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop = "15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop = "125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop = "0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop = "600dp"
+        android:clickable="true"
+        android:drawableTop="@drawable/text_borders"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

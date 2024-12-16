@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PokemonGame</string>
+    <string name="attack1">Attack 1</string>
+    <string name="attack2">Attack 2</string>
+    <string name="attack3">Attack 3</string>
+    <string name="attack4">Attack 4</string>
+    <string name="switch1">Switch 1</string>
+    <string name="switch2">Switch 2</string>
+    <string name="switch3">Switch 3</string>
+    <string name="switch4">Switch 4</string>
+    <string name="pokemon1">Pokemon1</string>
+    <string name="music">(On/Off)</string>
+</resources>
+
